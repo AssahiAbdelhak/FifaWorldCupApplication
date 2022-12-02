@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/matches_menu" android:icon="@drawable/ic_baseline_sports_soccer_24" android:title="Matches"/>
+    <item android:id="@+id/standings_menu" android:icon="@drawable/ic_baseline_sports_soccer_24" android:title="Standings"/>
+    <item android:id="@+id/players_score_menu" android:icon="@drawable/ic_baseline_sports_soccer_24" android:title="Players score"/>
+</menu>

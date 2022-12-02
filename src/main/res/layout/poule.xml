@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_poule"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9a1032"
+            android:gravity="center"
+            android:text="GROUPE A"
+            android:textColor="@color/white" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group_name"
+            android:id="@+id/table">
+            <TableRow android:id="@+id/header" android:background="#800E2A">
+                <TextView android:text="Team" android:gravity="center" android:textColor="@color/white" android:layout_weight="2"/>
+                <TextView android:text="W" android:layout_weight="1" android:textColor="@color/white" android:gravity="center"/>
+                <TextView android:text="L" android:layout_weight="1" android:gravity="center" android:textColor="@color/white"/>
+                <TextView android:text="D" android:layout_weight="1" android:gravity="center" android:textColor="@color/white"/>
+                <TextView android:text="Pts" android:layout_weight="1" android:gravity="center" android:textColor="@color/white"/>
+            </TableRow>
+            <TableRow >
+                <LinearLayout android:layout_weight="2" >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/flag1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="5dp"
+
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Morocco"
+                        android:id="@+id/team_name1"/>
+                </LinearLayout>
+                <TextView android:id="@+id/win1" android:text="0" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:id="@+id/lose1" android:text="0" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:id="@+id/draw1" android:text="0" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:text="0" android:id="@+id/pts1" android:layout_weight="1" android:gravity="center"/>
+            </TableRow>
+            <TableRow >
+                <LinearLayout android:layout_weight="2" >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="25dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/flag2"
+                        android:src="@mipmap/ic_launcher"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Morocco"
+                        android:id="@+id/team_name2"/>
+                </LinearLayout>
+                <TextView android:text="0" android:id="@+id/win2" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:text="0" android:id="@+id/lose2" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:text="0" android:id="@+id/draw2" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:text="0" android:id="@+id/pts2" android:layout_weight="1" android:gravity="center"/>
+            </TableRow>
+            <TableRow >
+                <LinearLayout android:layout_weight="2" >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/flag3"
+                        android:src="@mipmap/ic_launcher"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Morocco"
+                        android:id="@+id/team_name3"/>
+                </LinearLayout>
+                <TextView android:text="0" android:id="@+id/win3" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:text="0" android:id="@+id/lose3" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:text="0" android:id="@+id/draw3" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:text="0" android:id="@+id/pts3" android:layout_weight="1" android:gravity="center"/>
+            </TableRow>
+            <TableRow >
+                <LinearLayout android:layout_weight="2" >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/flag4"
+                        android:src="@mipmap/ic_launcher"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Morocco"
+                        android:id="@+id/team_name4"/>
+                </LinearLayout>
+                <TextView android:text="0" android:id="@+id/win4" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:text="0" android:id="@+id/lose4" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:text="0" android:id="@+id/draw4" android:layout_weight="1" android:gravity="center"/>
+                <TextView android:text="0" android:id="@+id/pts4" android:layout_weight="1" android:gravity="center"/>
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
